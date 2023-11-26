@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-commerce . about</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+    *::selection {
+        background-color: #555;
+        color: #dadada;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    html::-webkit-scrollbar {
+        display: none;
+    }
+
+    body {
+        background-color: #f2f2f2;
+        /* background-image: url(../resto/pngtree-fresh-minimalist-decorative-border-background-image_207046.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; */
+    }
+
+    .nav-item a {
+        position: relative;
+    }
+
+    .nav-item a::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        top: 80%;
+        left: 0;
+        border-bottom: 1px solid #111;
+        transition: 600ms ease-out;
+    }
+
+    .nav-item a:hover::after {
+        width: 100%;
+        transition: 600ms ease-out;
+    }
+
+    /* .phle {
+        width: 84.9vw;
+    }
+
+    .o {
+        background-color: #f3f3f3;
+    }
+
+    .n {
+        background-color: #f3f3f3;
+    }
+
+    .ban a {
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+
+    .down .btn {
+        font-size: .9rem;
+    }
+
+    .down .btn:hover {
+        background-color: #222;
+        color: #fff;
+        transition: 0.3s ease-in-out;
+    }
+
+    .dost::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nasheed {
+        position: relative;
+    }
+
+    .nasheed::after {
+        content: "———";
+        position: absolute;
+        left: 20%;
+        top: 0;
+        color: grey;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 5px;
+        background-color: grey;
+    }
+
+    .carousel-control-next-icon {
+        background-color: grey;
+    }
+
+    .carousel-control-prev-icon {
+        background-color: grey;
+    }
+
+    .habib::-webkit-scrollbar {
+        display: none;
+    }
+
+    .onn {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+        border-radius: 30px;
+        background-image: url(https://images.unsplash.com/photo-1536129808005-fae894214c73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    }
+
+    .onn::after {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: "oST";
+        color: #fff;
+        font-size: 2.5rem;
+        font-family: voyage;
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 0%;
+        left: -12%;
+        width: 0%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.53);
+        transition: 800ms ease-out;
+    }
+
+    .onn:hover::after {
+        width: 112%;
+    }*/
+
+    .faiyz {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+        border-radius: 30px;
+        background-image: url(https://images.pexels.com/photos/3778611/pexels-photo-3778611.jpeg);
+    }
+
+    .faiyz::after {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: "MR. shabeer . . ";
+        color: #fff;
+        font-size: 2.5rem;
+        font-family: voyage;
+        letter-spacing: .5rem;
+        text-transform: uppercase;
+        position: absolute;
+        top: -10%;
+        left: 0%;
+        width: 100%;
+        height: 0%;
+        background: rgba(0, 0, 0, 0.53);
+        transition: 800ms ease-out;
+    }
+
+    .faiyz:hover::after {
+        height: 110%;
+    }
+
+    .ord {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+        border-radius: 30px;
+        background-image: url(https://images.pexels.com/photos/3183186/pexels-photo-3183186.jpeg?auto=compress&cs=tinysrgb&w=600);
+    }
+
+    .ord::after {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: "Mady Developers";
+        color: #fff;
+        font-size: 2.5rem;
+        font-family: voyage;
+        letter-spacing: .5rem;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: -10%;
+        left: 0%;
+        width: 100%;
+        height: 0%;
+        background: rgba(0, 0, 0, 0.53);
+        transition: 800ms ease-out;
+    }
+
+    .ord:hover::after {
+        height: 110%;
+    }
+</style>
+
+<body>
+    <div id="main">
+        <nav class="navbar fixed-top navbar-expand-lg" style=" background-color: #f2f2f2;">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://logos-world.net/wp-content/uploads/2021/04/Maserati-Logo.png" class="img-fluid"
+                        style="width: 5.5rem; rotate: 180deg;" alt="">
+                </a>
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" style="background-color: #f2f2f2;" tabindex="-1"
+                    id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            <img src="https://logos-world.net/wp-content/uploads/2021/04/Maserati-Logo.png"
+                                class="img-fluid" style="width: 5.5rem; rotate: 180deg;" alt="">
+                        </h5>
+                        <button type="button" class="btn-close shadow-none border-0" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row">
+                        <ul
+                            class="navbar-nav justify-content-center align-items-center gap-lg-3 g-5 flex-grow-1 pe-3 fs-5">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link active" aria-current="./about" href="./about.html">About</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" aria-current="page" href="./index.html">Product</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <!-- <form
+                            class="d-flex flex-column flex-lg-row justify-content-end justify-content-lg-center align-items-lg-center gap-2">
+                            <div class="btn btn-outline-secondary border-none px-3 py-1 rounded-5 fs-5"
+                                style="text-decoration: none; text-transform: capitalize;">login</div>
+                            <div class="btn btn-outline-primary border-none px-3 py-1 rounded-5 fs-5"
+                                style="text-decoration: none; text-transform: capitalize;">sign up</div>
+                        </form> -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- abouted E commerce -->
+        <div class="container">
+            <div class="row d-flex justify-content-start align-items-center">
+                <div class="col-12 col-lg-6 mt-5 d-flex justify-content-center align-items-center">
+                    <div class="faiyz overflow-hidden text-center mt-5">
+                        <img src="https://images.pexels.com/photos/3778611/pexels-photo-3778611.jpeg" class="img-fluid"
+                            style="opacity: 0;" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mt-2 mt-lg-5 d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="text-capitalize" style="font-size: calc(100% + 2vw + 2vh); font-family: voyage;">
+                        . . foun<span style="font-family: voyage; font-weight: 500; color: #671A1A;">der</span> ———>
+                    </h1>
+                    <h4 class="text-capitalize" style="color: #666;">md. shabeer . .</h4>
+                    <p class="w-75">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, officiis sunt?
+                        Sapiente, maxime? Reiciendis impedit sint culpa nostrum! Laboriosam porro officiis dolorum vel
+                        illum asperiores mollitia molestias voluptatibus minus aliquid aspernatur iure aperiam beatae
+                        dolores, sed accusamus quaerat dignissimos laudantium consequuntur obcaecati pariatur eaque
+                        blanditiis dolor natus. Dicta, velit asperiores.</p>
+                    <div class="d-flex mt-2 gap-3">
+                        <div class="btn btn-outline-primary"></div>
+                        <div class="btn btn-outline-secondary"></div>
+                        <div class="btn btn-outline-danger"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- logo section -->
+            <div class="row mt-5 g-3 shadow">
+                <div class="col-12 col-lg-4 d-flex flex-column text-center justify-content-center align-items-center">
+                    <h4 class="text-capitalize text-center" style="font-size: calc(100% + 1vw + .5vh);">something about
+                        <sup style="font-family: voyage; font-weight: 600; color: #671A1A;"> (design)</sup></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo saepe pariatur odio modi
+                        molestiae rerum voluptates sapiente blanditiis numquam mollitia voluptatem eligendi facere autem
+                        ducimus delectus nesciunt deleniti fugit quis odit, quaerat natus officia reiciendis. Recusandae
+                        quo facere cumque sunt nemo consectetur perferendis voluptatum, repudiandae assumenda veritatis.
+                        Possimus, saepe tenetur?</p>
+                    <div class="d-flex mt-2 gap-3 mb-3">
+                        <div class="btn btn-outline-primary">more</div>
+                        <div class="btn btn-outline-warning">read</div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center ">
+                    <img src="https://logos-world.net/wp-content/uploads/2021/04/Maserati-Logo.png"
+                        class="img-fluid w-75" style="rotate: 180deg;" alt="">
+                </div>
+                <div class="col-12 col-lg-4 d-flex flex-column text-center justify-content-center align-items-center">
+                    <h4 class="text-capitalize text-center" style="font-size: calc(100% + 1vw + .5vh);">compection
+                        <sup style="font-family: voyage; font-weight: 600; color: #671A1A;"> (uzerbez)</sup></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo saepe pariatur odio modi
+                        molestiae rerum voluptates sapiente blanditiis numquam mollitia voluptatem eligendi facere autem
+                        ducimus delectus nesciunt deleniti fugit quis odit, quaerat natus officia reiciendis. Recusandae
+                        quo facere cumque sunt nemo consectetur perferendis voluptatum, repudiandae assumenda veritatis.
+                        Possimus, saepe tenetur?</p>
+                    <div class="d-flex mt-2 gap-3 mb-3">
+                        <div class="btn btn-outline-primary">more</div>
+                        <div class="btn btn-outline-danger">read</div>
+                    </div>
+                </div>
+            </div>
+            <!-- team working -->
+            <div class="row d-flex justify-content-start align-items-center">
+                <div class="order-1 order-lg-0 col-12 col-lg-6 mt-2 mt-lg-5 d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="text-capitalize" style="font-size: calc(100% + 2vw + 2vh); font-family: voyage;">
+                        team<span style="font-family: voyage; font-weight: 500; color: #671A1A;"> work</span> ———>
+                    </h1>
+                    <h4 class="text-capitalize" style="color: #666;">Developer's . . .</h4>
+                    <p class="w-75">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, officiis sunt?
+                        Sapiente, maxime? Reiciendis impedit sint culpa nostrum! Laboriosam porro officiis dolorum vel
+                        illum asperiores mollitia molestias voluptatibus minus aliquid aspernatur iure aperiam beatae
+                        dolores, sed accusamus quaerat dignissimos laudantium consequuntur obcaecati pariatur eaque
+                        blanditiis dolor natus. Dicta, velit asperiores.</p>
+                    <div class="d-flex mt-2 gap-3">
+                        <div class="btn btn-outline-primary">contact</div>
+                        <div class="btn btn-outline-secondary">advice</div>
+                        <div class="btn btn-outline-warning">message</div>
+                    </div>
+                </div>
+                <div class="order-0 order-lg-1 col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="ord overflow-hidden text-center mt-5">
+                        <img src="https://images.pexels.com/photos/3183186/pexels-photo-3183186.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid"
+                            style="opacity: 0;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer
+            class="d-flex mx-4 flex-wrap justify-content-between align-items-center mt-3 py-3 border-top border-secondary">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="mb-md-0 text-body-secondary fw-semibold fs-5">© 2023 Company, Inc</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex fs-5" style="letter-spacing: 1rem;">
+                <li class="ms-3"><a class="text-body-secondary fw-semibold" style="text-decoration: none;" href="#"><i
+                            class="ri-instagram-line"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary fw-semibold" style="text-decoration: none;" href="#"><i
+                            class="ri-twitter-line"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary fw-semibold" style="text-decoration: none;" href="#"><i
+                            class="ri-messenger-line"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
